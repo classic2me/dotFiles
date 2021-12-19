@@ -25,6 +25,7 @@
         C-x u           undo
         C-_             undo
         C-/             undo
+        C-r             redo in evil-mode
         C-u C-/         undo within region
         C-h             help
         C-h i           view Emacs manual
@@ -42,7 +43,6 @@
         C-x k           kill buffer
         C-x n n         narrow buffer to the current region
         C-x n w         restore ("wider") buffer
-        C-M-j           jump among buffers
 
 [ WINDOW ]
         C-x 1           close all windows except the one the cursor is in
@@ -106,7 +106,6 @@
         M-x revert-buffer   undo all changes since last save
         M-x revert-file     recover text from an autosave-file
         M-x revert-session  if you edited several files
-        C-x C-;         comment or uncomment the (selected) lines
 
 [ DELETE/KILL ]
         C-d             delete a char
@@ -181,7 +180,7 @@
         <RET>           terminate search
         C-M-s           regular expression incremental search
 
-[IN SEARCH MODE]
+[ IN SEARCH MODE ]
         DEL             to cancel last input item from end of search string.
         RET             to exit, leaving point at location found.
         LFD (C-j)       to match end of line.
@@ -214,6 +213,21 @@
         M-p             to search for the previous item in the search ring.
         M-TAB           to complete the search string using the search ring.
 
+[ Font ]
+        C-x C-_         to decrease the font size
+        C-x C-=         to increase the font size
+        C-x C-0         to reset to the default
+
+[ DIRED ]
+        C-x d           enter dired mode
+        g r             refresh the dired window
+
+[ org-mode ]
+        M-<UP>          move the block up
+        M-<DOWN>        move the block up
+        C-c ^           M-x org-sort
+        C-r             redo in evil-mode
+
 [ M-x ]
         M-x calculator
         M-x calendar
@@ -227,6 +241,7 @@
         M-x fundamental-mode
         M-x verilog-mode
         M-x linum-mode             Show line numbers
+        M-x viper-mode             Making emacs more like vi
         M-x flyspell-mode          Highlights misspelled words as you type
         M-x transient-mark-mode    Making Emacs highlight the region
         M-x tabify                 Remove space characters and insert TABs
@@ -253,10 +268,8 @@
         M-x term                   Run a subshell with full terminal emulation
                                    (C-c C-j, C-c C-k, C-c o)
         M-x doc-view               View pdf files
-        M-x run-lisp               Run lisp interpreter
-        M-x describe-function      Help for emacs functions (C-h f)
-        M-x describe-variable      Help for emacs variables (C-h v)
-        M-x eval-buffer            Execute elisp codes on buffer
+        M-x lisp-interaction-mode  Pressing C-j will feed the s-expression before the cursor
+        M-x ielm                   Bring up a real ELISP termnial
 
 [ INFO/HELP ]
         C-h i           enter 'Emacs info'
