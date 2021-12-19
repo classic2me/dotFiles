@@ -44,6 +44,8 @@ git remote add origin https://github.com/classic2me/dotFiles.git
 
 git fetch origin
 
-git reset origin/master
+git reset origin/main
 
 git status
+
+git pull
