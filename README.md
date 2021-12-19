@@ -26,8 +26,13 @@ git push -u origin main
 
 # update the file
 git status
+
 git add README.md
+
 git commit -m "modified README.md"
+
 git status
+
 git pull origin main
+
 git push origin main
