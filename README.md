@@ -3,7 +3,7 @@ https://github.com/classic2me/dotFiles.git
 
 echo "# dotFiles" >> README.md
 
-
+# init a working-copy
 git init
 
 git add README.md
@@ -36,3 +36,14 @@ git status
 git pull origin main
 
 git push origin main
+
+# sync a local directory with an existing git repo
+git init
+
+git remote add origin https://github.com/classic2me/dotFiles.git
+
+git fetch origin
+
+git reset origin/master
+
+git status
