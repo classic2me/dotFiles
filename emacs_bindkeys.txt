@@ -217,10 +217,10 @@
         C-x C-_         to decrease the font size
         C-x C-=         to increase the font size
         C-x C-0         to reset to the default
-        
+
 [ DIRED ]
         C-x d           enter dired mode
-        gr              refresh the dired window
+        g r             refresh the dired window
 
 [ org-mode ]
         M-<UP>          move the block up
