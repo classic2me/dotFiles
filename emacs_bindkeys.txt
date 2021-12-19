@@ -1,0 +1,280 @@
+# Emacs ~= Borland IDE (Soochang V1.33)
+# a2ps --column=2 -r -M letter -l 80 -Duser.name=Soochang -o -
+
+[ FILE ]
+        C-x d           enter Dired mode (type h in Dired mode)
+        C-x C-f         find file (same as "New File")
+        M-x ffap        same as vim "gf"
+        C-x i           insert file
+        C-x C-s         save file
+        C-x C-w         save as file
+        M-x set-visited-file-name
+                        change the file name under which the
+                        current buffer will be saved.
+        C-x <RET> f [unix/dos] <RET>
+                        change text file type - unix or dos
+        M-~             make it not-modified without saving
+        C-x C-c         quit Emacs
+        C-x z ...       repeat the last command
+        M-:             buffer-file-name
+        C-F1            show and put absolute file name into OS's clipboard
+        C-x C-v         reload a file
+
+[ EMERGENCY ]
+        C-g             <Esc> of vi
+        C-x u           undo
+        C-_             undo
+        C-/             undo
+        C-u C-/         undo within region
+        C-h             help
+        C-h i           view Emacs manual
+        C-h C-a         invoke the orginal emacs opening screen
+
+[ OS ]
+        M-!             shell command
+
+[ BUFFER ]
+        C-x b           create/switch buffers (use arrow keys)
+        C-x C-b         show the list of buffers
+        C-x <C-right>   switch to next buffer
+        C-x <C-left>    switch to previous buffer
+        C-x s           save some buffers
+        C-x k           kill buffer
+        C-x n n         narrow buffer to the current region
+        C-x n w         restore ("wider") buffer
+        C-M-j           jump among buffers
+
+[ WINDOW ]
+        C-x 1           close all windows except the one the cursor is in
+        C-x 2           split window vertically
+        C-x 3           split window horizontally
+        C-x 0           delete window
+        C-x o           change cursor focus on every other window
+        C-x +           balance windows
+        C-x ^           enlarge window
+        C-x {           shrink window horizontally
+        C-x }           enlarge window horizontally
+        C-M-l           reposition window
+        C-M-w           append next kill
+
+[ MOVE CURSOR ]
+        C-f/C-b         move forward/backward a character
+        M-f/M-b         move forward/backward a word
+        C-n/C-p         move to next/previous line
+        C-a/C-e         move to beginning/end of line
+        M-a             move back to beginning of sentence
+        M-e             move forward to end of sentence
+        M-m             move (forward or back) to the first
+                        nonblank character on the current line
+        C-v/M-v         move forward/backward one screenful
+        C-l             clear screen and redisplay all the text
+        M-<             move to the beginning of document
+        M->             move to the end of document
+        M-{             move to backward-paragraph
+        M-}             move to forward-paragraph
+        C-l             go to line# (need .emacs update)
+        M-g             go to file under the cursor
+        C-x =           print char code, char position and column
+                        of the cursor location
+        C-M-n           forward-list;   move forward over a parenthetical group
+        C-M-p           backward-list;  move backward over a parenthetical group
+        C-M-f           forward-sexp;   move forward over a balanced expression
+        C-M-b           backward-sexp;  move backward over a balanced expression
+        C-M-k           kill-sexp;      kill balanced expression forward
+        C-M-SPC         mark-sexp;      put the mark at the end of the sexp
+
+[ EDIT ]
+        M-/             autocompletion
+        Ins             toggle between ovwrt and ins modes
+        M-t             transpose words
+        C-t             transpose chars
+        C-x C-t         transpose lines
+        M-s             center line
+        M-S             center paragraph
+        C-o             open line
+        C-M-o           split the current line at point
+        C-j             newline and indent
+        M-^             connect two lines (similar to vi J)
+        M-i             tab-to-tab stop (adding tab)
+        M-c             capitalize-word
+        M-l             downcase-word
+        M-u             upcase-word
+        C-x i           insert file
+        C-x z           repeat
+        C-x RET f unix  dos to unix
+        C-x RET f dos   unix to dos
+        M-x revert-buffer   undo all changes since last save
+        M-x revert-file     recover text from an autosave-file
+        M-x revert-session  if you edited several files
+        C-x C-;         comment or uncomment the (selected) lines
+
+[ DELETE/KILL ]
+        C-d             delete a char
+        M-d             delete word
+        M-Del           delete word backwards
+        C-k             kill from the cursor position to end of line
+        M-k             kill to the end of the current sentence
+        M-\             delete horizontal space
+        M-SPC           delete all spaces and tabs around point, leaving
+                        one space
+        C-x C-o         delete blank lines around the current line
+        C-S-<Backspace> kill whole line
+        C-S-<Backspace> C-/ (yy of vi)
+        M-z CHAR        zap to char
+        C-a C-k C-k C-/ yy of vi
+
+[ FILL/WRAP ]
+        M-q             fill current paragraph
+        C-x f           set the fill column
+        M-s             center a line
+        M-x fill-region fill each paragraph in the region
+        M-x fill-region-as-paragraph
+                        fill the region, considering it as one paragraph
+
+[ MARK/REGION ]
+        C-SPC           set mark to the current location
+        C-g             unset mark
+        C-x C-x         swap point and mark
+        C-u C-SPC       cycle through mark ring
+        C-x h           make region contain the entire buffer("Select all")
+        M-h             make region contain the current paragraph
+        C-c >           python-shift-right
+        C-c <           python-shift-left
+        C-M-\           indent region
+        C-x <TAB>       shift lines in the region rigidly right or left
+        M-(             insert parentheses
+        C-x C-u         convert region to upper case
+        C-x C-l         convert region to lower case
+        C-x n n         narrow buffer to the current region
+        C-x n w         restore ("widen") buffer
+        M-x fill-region fill each paragraph in the region
+        M-x fill-region-as-paragraph
+                        fill the region, considering it as one paragraph
+
+[ RECTANGLE ]
+        C-SPC           set mark at a corner of rectangle
+        C-x r k         kill rectangle
+        C-x r d         delete rectangle
+        C-x r y         yank rectangle
+        C-x r o         open rectangle
+        C-x r c         clear rectangle
+        C-x r t {string} <RET>
+                        insert {string} before rectangle
+        M-x delete-whitespace-rectangle
+        M-x string-insert-rectangle <RET> {string} <RET>
+
+[ CUT/COPY/YANK/PASTE ]
+        C-w             kill region("cut")
+        M-w             save region to kill ring without deleting("copy")
+        C-y             yank last killed text("paste")
+        M-y             replace yanked text with previously killed text
+
+[ REPLACE ]
+        M-%             query replace
+        C-M-%           query replace regexp
+
+[ SEARCH ]
+        C-s             start a incremental search
+        C-s C-w         search word under the cursor
+        C-r             start a decremental search
+        C-g             stop searching
+        <RET>           terminate search
+        C-M-s           regular expression incremental search
+
+[IN SEARCH MODE]
+        DEL             to cancel last input item from end of search string.
+        RET             to exit, leaving point at location found.
+        LFD (C-j)       to match end of line.
+        C-s             to search again forward, C-r to search again backward.
+        C-w             to yank next word or character in buffer
+                        onto the end of the search string, and search for it.
+        C-M-w           to delete character from end of search string.
+        C-M-y           to yank char from buffer onto end of search
+                        string and search for it.
+        C-y             to yank rest of line onto end of search
+                        string and search for it.
+        M-y             to yank the last string of killed text.
+        C-q             to quote control character to search for it.
+        C-g             while searching or when search has failed cancels
+                        input back to what has been found successfully.
+        C-g             when search is successful aborts and moves
+                        point to starting point.
+
+        M-%             to start `query-replace' with string to
+                        replace from last search string.
+        C-M-%           to start `query-replace-regexp' with string to
+                        replace from last search string.
+
+        M-c             to toggle search case-sensitivity.
+        M-r             to toggle regular-expression mode.
+        M-e             to edit the search string in the minibuffer.
+
+        Also supported is a search ring of the previous 16 search strings.
+        M-n             to search for the next item in the search ring.
+        M-p             to search for the previous item in the search ring.
+        M-TAB           to complete the search string using the search ring.
+
+[ M-x ]
+        M-x calculator
+        M-x calendar
+        M-x phases-of-moon
+        M-x tetris
+        M-x hanoi
+        M-x doctor
+        M-x java-mode
+        M-x python-mode
+        M-x text-mode
+        M-x fundamental-mode
+        M-x verilog-mode
+        M-x linum-mode             Show line numbers
+        M-x flyspell-mode          Highlights misspelled words as you type
+        M-x transient-mark-mode    Making Emacs highlight the region
+        M-x tabify                 Remove space characters and insert TABs
+                                   (only on a marked region)
+        M-x untabify               Change all the TABs in the current region
+                                   to spaces
+        M-x set-variable RET tab-width RET 4 RET
+        M-x indent-relative        Indent from point to under an indentation
+                                   point in the previous line
+        M-x fill-region            Fill each paragraph in the region
+        M-x fill-region-as-paragraph
+                                   Fill the region, considering it as one
+                                   paragraph
+        M-x delete-trailing-whitespace
+                                   Delete all trailing whitespace
+                                   within the current buffer's
+                                   accessible portion
+        M-x ffap                   Go to file under the cursor
+        M-x load-libary            Load libray el file
+        M-x <function name>        Call <function name>
+        M-x shell                  Run a subshell with input and output through
+                                   an Emacs buffer
+        M-x eshell                 Start the Emacs shell.
+        M-x term                   Run a subshell with full terminal emulation
+                                   (C-c C-j, C-c C-k, C-c o)
+        M-x doc-view               View pdf files
+        M-x run-lisp               Run lisp interpreter
+        M-x describe-function      Help for emacs functions (C-h f)
+        M-x describe-variable      Help for emacs variables (C-h v)
+        M-x eval-buffer            Execute elisp codes on buffer
+
+[ INFO/HELP ]
+        C-h i           enter 'Emacs info'
+        n/p             next/previous node
+        ^               up node
+        [               backward
+        ]               forward
+
+[ EDIFF ]
+        emacs -diff file1 file2
+        M-x ediff
+        M-x ediff-buffers
+        M-x ediff-current-file
+        M-x ediff-revision.ediff-buffers
+        n/p             next diff/previous diff
+        a/b             copy a to b/b to a
+        ##              whitespace sensitivity (toggle)
+        #c              case sensitivity (toggle)
+        ?               help
+        m               wide display
+        !               update diff regions
