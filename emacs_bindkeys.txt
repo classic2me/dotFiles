@@ -99,6 +99,7 @@
         M-c             capitalize-word
         M-l             downcase-word
         M-u             upcase-word
+        M-;             comment/uncomment out the highlighted region
         C-x i           insert file
         C-x z           repeat
         C-x RET f unix  dos to unix
