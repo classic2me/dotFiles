@@ -222,6 +222,7 @@
 [ DIRED ]
         C-x d           enter dired mode
         g r             refresh the dired window
+        S-h             show/hide hidden files
 
 [ org-mode ]
         M-<UP>          move the block up
