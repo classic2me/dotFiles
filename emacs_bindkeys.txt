@@ -226,7 +226,7 @@
 
 [ org-mode ]
         M-<UP>          move the block up
-        M-<DOWN>        move the block up
+        M-<DOWN>        move the block down
         C-c ^           M-x org-sort
         C-r             redo in evil-mode
 
